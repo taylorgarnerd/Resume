@@ -1,0 +1,36 @@
+{
+	"name": "Layzor Garner",
+	"email": "taylorgarnerd@gmail.com",
+	"phone": "555-555-5555",
+	"languages": [
+		"Wookie",
+		"Pig Latin",
+		"Robot"
+	],
+	"experience": [
+	{
+		"employer": "The Price is Right",
+		"title": "Plinko Technician",
+		"begin": "March 1998",
+		"end": "Present",
+		"tasks": [
+			"Polish plinko disks",
+			"Reinstall pegs and lights on Plinko board"
+		]
+	},
+	{
+		"employer": "SNL",
+		"title": "Featured Player",
+		"begin": "February 1994",
+		"end": "February 1998",
+		"tasks": [
+			"Write and act in sketches",
+			"Be funny"
+		]
+	}
+	],
+	"education": {
+		"school": "Clown School of Chicago",
+		"major": "Tiny Bicylcing"
+	}
+}

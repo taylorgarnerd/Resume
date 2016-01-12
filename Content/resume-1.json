@@ -1,0 +1,37 @@
+{
+	"name": "Taylor Garner",
+	"email": "taylorgarnerd@gmail.com",
+	"phone": "555-555-5555",
+	"languages": [
+		"HTML",
+		"CSS",
+		"Javascript",
+		"jQuery"
+	],
+	"experience": [
+	{
+		"employer": "Adcap Network Systems",
+		"title": "Project Manager",
+		"begin": "March 2015",
+		"end": "Present",
+		"tasks": [
+			"Guide the creation of new projects by collaborating with sales, pre-sales, and engineering teams",
+			"Lead projects to completion with strong communication and detailed project plans"
+		]
+	},
+	{
+		"employer": "Ticket Alternative",
+		"title": "Print Specialist",
+		"begin": "February 2011",
+		"end": "February 2015",
+		"tasks": [
+			"Developed collaborative Google spreadsheets for tracking accounts, orders, and deadlines",
+			"Created custom order proofs and print ready files with Adobe Illustrator and Photoshop"
+		]
+	}
+	],
+	"education": {
+		"school": "Georgia State University",
+		"major": "Economics"
+	}
+}

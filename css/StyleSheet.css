@@ -1,0 +1,113 @@
+html, body, h1, h2, h4 p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+h2 {
+    font-size: 20px;
+    color: dimgray;
+}
+
+#header {
+    margin-bottom: 10px;
+    background: url("../img/geometry2.png");
+    padding: 10px 0px 0px 10px;
+}
+#header h1, #header p {
+    display: inline;
+    margin-left: 15px;
+}
+#header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: dimgray;
+}
+#header p {
+    font-weight: bold;
+}
+#header p:nth-child(3) {
+    font-size: 40px;
+    color: #FF7604;
+}
+#header p:nth-child(4){
+    font-size: 25px;
+    color: dimgray;
+}
+
+#picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: url("../img/Profile-2.jpg") no-repeat;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    display: inline-block;
+}
+
+
+#contact-information {
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#contact-information h4, #contact-information p {
+    display: inline;
+}
+#contact-information h4 {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 5px;
+    color: #F7A500;
+}
+
+#skills {
+	margin: 10px;
+}
+
+#work-experience {
+	margin: 10px;
+}
+#work-experience h2 {
+    margin-bottom: 15px;
+}
+#work-experience p {
+    margin: 0px;
+}
+#work-experience ul {
+    margin-top: 5px;
+}
+
+#education {
+    margin: 10px;
+}
+#education h2 {
+    margin-bottom: 15px;
+}
+#education p {
+    margin: 0px;
+}
+#education p:nth-child(3) {
+    margin-left: 25px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+#footer a {
+    font-weight: bold;
+    color: #F7A500;
+    text-decoration: none;
+}
+#footer a:hover {
+    color: #FF7604;
+}
+#footer-portfolio, #footer-blog {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 3px solid dimgray;
+    border-radius: 5px;
+}

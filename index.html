@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Dev Portfolio</title>
+	<meta charset="utf-8" />
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.getJSON('content/resume-1.json', function (resume) {
+                //Parse information into header div
+                $('#header').append('<p>' + resume.name + '</p>');
+
+                //Parse information into contact information div
+                $('#contact-information h4:first').after('<p>' + resume.email + '</p>');
+                $('#contact-information h4:eq(1)').after('<p>' + resume.phone + '</p>');
+
+                //Parse languages into skills div
+                $(resume.languages).each(function (i, lang) {
+                    $('#skills ul').append('<li>' + lang + '</li>');
+                });
+
+                //Parse information into work-experience div
+                $(resume.experience).each(function (i, exp) {
+                    $('#work-experience').append('<p>' + exp.employer + '</p>');
+                    $('#work-experience').append('<p><strong>' + exp.title + '</strong>, ' + exp.begin + ' - ' + exp.end + '</p>');
+                    
+                    var tasklist = '<ul>';
+                    $(exp.tasks).each(function (j, task) {
+                        tasklist += '<li>' + task + '</li>';
+                    });
+                    tasklist += '</ul>';
+                    $('#work-experience').append(tasklist);
+                });
+
+                //Parse information into education div
+                $('#education').append('<p>' + resume.education.school + '</p>');
+                $('#education').append('<p> -' + resume.education.major + '</p>');
+            });
+        });
+    </script>
+</head>
+<body>
+	<div id="header">
+        <div id="picture"></div>
+        <h1>Resume</h1>
+        <p>//</p>
+	</div>
+	<div id="contact-information">
+        <h4>Email</h4>
+        <h4>Phone</h4>
+	</div>
+	<div id="skills">
+        <h2>Languages</h2>
+        <ul>
+        </ul>
+	</div>
+	<div id="work-experience">
+        <h2>Work Experience</h2>
+	</div>
+	<div id="education">
+        <h2>Education</h2>
+	</div>
+    <div id="footer">
+        <div id="footer-portfolio">
+            <a href="http://portfolio.thecriticalpath.org">Portfolio</a>
+        </div>
+        <div id="footer-blog">
+            <a href="http://www.thecriticalpath.org">Blog</a>
+        </div>
+    </div>
+</body>
+</html>
