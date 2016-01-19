@@ -10,7 +10,8 @@
 	],
 	"experience": [
 	{
-		"employer": "Adcap Network Systems",
+    "employer": "Adcap Network Systems",
+    "loc":  {"lat": 34.0335314, "lng": -84.2930557},
 		"title": "Project Manager",
 		"begin": "March 2015",
 		"end": "Present",
@@ -20,7 +21,8 @@
 		]
 	},
 	{
-		"employer": "Ticket Alternative",
+    "employer": "Ticket Alternative",
+    "loc":  {"lat": 33.7920964, "lng": -84.3911749},
 		"title": "Print Specialist",
 		"begin": "February 2011",
 		"end": "February 2015",

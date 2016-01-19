@@ -78,7 +78,7 @@ h2 {
 }
 
 #education {
-    margin: 10px;
+    margin: 10px 10px 20px 10px;;
 }
 #education h2 {
     margin-bottom: 15px;
@@ -88,6 +88,44 @@ h2 {
 }
 #education p:nth-child(3) {
     margin-left: 25px;
+}
+
+#connect {
+    background-color: #fafafa;
+    padding: 10px 10px 15px 10px;
+    border: 1px solid lightgray;
+}
+#connect h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#connect-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.connect-box {
+    width: 20%;
+}
+.connect-box img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#map-header {
+    padding: 5px;
+}
+#map-header h2 {
+    margin: 10px 5px 5px 5px;
+}
+#map-panel {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+#map {
+   height: 400px;
+   width: 600px;
 }
 
 #footer {
