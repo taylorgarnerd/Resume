@@ -90,6 +90,11 @@ h2 {
     margin-left: 25px;
 }
 
+#selector {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
 #connect {
     background-color: #fafafa;
     padding: 10px 10px 15px 10px;
