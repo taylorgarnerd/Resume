@@ -10,6 +10,7 @@
 	"experience": [
 	{
 		"employer": "The Price is Right",
+		"loc":  {"lat": 34.0335314, "lng": -84.2930557},
 		"title": "Plinko Technician",
 		"begin": "March 1998",
 		"end": "Present",
@@ -20,6 +21,7 @@
 	},
 	{
 		"employer": "SNL",
+		"loc":  {"lat": 33.7920964, "lng": -84.3911749},
 		"title": "Featured Player",
 		"begin": "February 1994",
 		"end": "February 1998",
