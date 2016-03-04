@@ -19,6 +19,7 @@ $(function () {
 		init: function () {
 			model.init();
 			resumeView.init();
+			mapView.init();
 		}
 	};
 
@@ -82,10 +83,29 @@ $(function () {
 
 	var mapView = {
 		init: function () {
+			//Atlanta coordinates
+			this.coordinates = { lat: 33.755, lng: -84.390 };
 
+			mapView.render();
 		},
 		render: function () {
-
+			//Create map - center on Atlanta
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: mapView.coordinates,
+              zoom: 9,
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+            //Parse JSON for location objects and place markers for those coordinates
+            $.getJSON(octopus.getResume(), function (resume) {
+                $(resume.experience).each(function (i, exp) {
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(exp.loc.lat, exp.loc.lng),
+                        map: map,
+                        title: exp.employer
+                    });
+                });
+            });
 		}
 	};
 
